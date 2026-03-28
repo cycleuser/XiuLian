@@ -65,6 +65,7 @@ def measure_performance(engine, test_cases, iterations=100):
         for case in test_cases:
             start = time.perf_counter()
             result = engine.process(case[0])
+            intent = engine.parser.parse(case[0])  # 获取解析的意图
             latency = (time.perf_counter() - start) * 1000
             latencies.append(latency)
             total += 1
@@ -73,14 +74,13 @@ def measure_performance(engine, test_cases, iterations=100):
                 if result.success:
                     correct += 1
             elif len(case) > 1:  # 检查意图/关键词
-                if result.success:
-                    if isinstance(case[1], str):  # 意图检查
-                        if result.data and case[1] in str(result.data):
-                            correct += 1
-                    elif isinstance(case[1], list):  # 关键词检查
-                        answer = str(result.data).lower() if result.data else ""
-                        if any(kw.lower() in answer for kw in case[1]):
-                            correct += 1
+                if isinstance(case[1], str):  # 意图检查
+                    if intent.action == case[1]:
+                        correct += 1
+                elif isinstance(case[1], list):  # 关键词检查
+                    answer = str(result.data).lower() if result.data else ""
+                    if any(kw.lower() in answer for kw in case[1]):
+                        correct += 1
     
     latencies.sort()
     n = len(latencies)
