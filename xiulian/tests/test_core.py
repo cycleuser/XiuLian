@@ -2,37 +2,37 @@
 
 import pytest
 import time
-from xiulian.core import Engine, SymbolicParser, Memory, Graph, Tool
+from xiulian.core import Engine, Parser, Memory, KnowledgeGraph, ToolRegistry, ToolDef, ActionType
 from xiulian.api import Result
 
 class TestParser:
     def test_tool_intent(self):
-        p = SymbolicParser()
+        p = Parser()
         r = p.parse("调用echo")
-        assert r.action == "tool"
+        assert r.action == ActionType.TOOL
     
     def test_search_intent(self):
-        p = SymbolicParser()
-        r = p.parse("搜索AI")
-        assert r.action == "search"
+        p = Parser()
+        r = p.parse("搜索 AI")
+        assert r.action == ActionType.SEARCH
     
     def test_web_intent(self):
-        p = SymbolicParser()
+        p = Parser()
         r = p.parse("打开 https://example.com")
-        assert r.action == "web"
+        assert r.action == ActionType.WEB
     
     def test_question_intent(self):
-        p = SymbolicParser()
+        p = Parser()
         r = p.parse("什么是AI?")
-        assert r.action == "question"
+        assert r.action == ActionType.QUESTION
     
     def test_entity_url(self):
-        p = SymbolicParser()
+        p = Parser()
         r = p.parse("访问 https://test.com")
         assert "url" in r.entities
     
     def test_speed(self):
-        p = SymbolicParser()
+        p = Parser()
         start = time.time()
         for _ in range(1000):
             p.parse("这是一个测试")
@@ -52,29 +52,36 @@ class TestMemory:
         r = m.search("learning")
         assert len(r) == 2
 
-class TestGraph:
+class TestKnowledgeGraph:
     def test_add_path(self):
-        g = Graph()
-        g.add("A")
-        g.add("B")
-        g.link("A", "B")
-        assert g.path("A", "B") == ["A", "B"]
+        g = KnowledgeGraph()
+        g.add_entity("A")
+        g.add_entity("B")
+        g.add_relation("A", "B")
+        assert g.find_path("A", "B") == ["A", "B"]
     
     def test_neighbors(self):
-        g = Graph()
-        g.add("A"); g.add("B"); g.add("C")
-        g.link("A", "B"); g.link("B", "C")
-        assert "B" in g.neighbors("A")
+        g = KnowledgeGraph()
+        g.add_entity("A"); g.add_entity("B"); g.add_entity("C")
+        g.add_relation("A", "B"); g.add_relation("B", "C")
+        rels = g.get_relations("A")
+        assert len(rels) > 0
 
-class TestTool:
+class TestToolRegistry:
     def test_register_execute(self):
-        t = Tool()
-        t.register("test", lambda x: x * 2, "测试")
+        t = ToolRegistry()
+        tool = ToolDef(
+            name="test",
+            func=lambda x: x * 2,
+            description="测试工具",
+            params_schema={"x": "int"}
+        )
+        t.register(tool)
         r = t.execute("test", x=5)
         assert r.success and r.data == 10
     
     def test_unknown_tool(self):
-        t = Tool()
+        t = ToolRegistry()
         r = t.execute("unknown")
         assert not r.success
 

@@ -1,6 +1,6 @@
 """测试配置"""
 import pytest
-from xiulian.core import Engine, Memory, Graph
+from xiulian.core import Engine, Memory, KnowledgeGraph
 
 @pytest.fixture
 def engine():
@@ -15,7 +15,7 @@ def memory():
 
 @pytest.fixture
 def graph():
-    g = Graph()
+    g = KnowledgeGraph()
     g.add("AI"); g.add("ML"); g.add("DL")
     g.link("AI", "ML"); g.link("ML", "DL")
     return g

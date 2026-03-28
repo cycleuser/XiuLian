@@ -1,75 +1,75 @@
 {
-  "timestamp": "2026-03-28T18:03:58.994184",
+  "timestamp": "2026-03-28T20:05:50.082285",
   "environment": {
     "platform": "darwin",
     "python_version": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:07:20) [Clang 20.1.8 ]"
   },
   "benchmarks": {
     "tool_calling": {
-      "samples": 500,
-      "correct": 500,
+      "samples": 300,
+      "correct": 300,
       "accuracy": 1.0,
-      "avg_latency_ms": 0.0336991797958035,
-      "min_latency_ms": 0.0255839986493811,
-      "max_latency_ms": 0.07120800000848249,
-      "p50_ms": 0.02879199746530503,
-      "p95_ms": 0.0487080033053644,
-      "p99_ms": 0.05483300628839061,
-      "std_ms": 0.009064271808767572
+      "avg_latency_ms": 0.08071539336621451,
+      "min_latency_ms": 0.053584008128382266,
+      "max_latency_ms": 0.2684170030988753,
+      "p50_ms": 0.08237498695962131,
+      "p95_ms": 0.10116699559148401,
+      "p99_ms": 0.1414159924024716,
+      "std_ms": 0.019754735164601387
     },
     "question_answering": {
-      "samples": 500,
-      "correct": 0,
-      "accuracy": 0.0,
-      "avg_latency_ms": 0.04003683809423819,
-      "min_latency_ms": 0.036833000194747,
-      "max_latency_ms": 0.06974999996600673,
-      "p50_ms": 0.03904200275428593,
-      "p95_ms": 0.047041998186614364,
-      "p99_ms": 0.05279199831420556,
-      "std_ms": 0.003343782049727897
+      "samples": 150,
+      "correct": 150,
+      "accuracy": 1.0,
+      "avg_latency_ms": 0.07644364678223307,
+      "min_latency_ms": 0.07324999023694545,
+      "max_latency_ms": 0.16116599726956338,
+      "p50_ms": 0.07462500070687383,
+      "p95_ms": 0.08062500273808837,
+      "p99_ms": 0.09737499931361526,
+      "std_ms": 0.007609420182357271
     },
     "intent_recognition": {
-      "samples": 500,
-      "correct": 500,
-      "accuracy": 1.0,
-      "avg_latency_ms": 100.39803184414632,
-      "min_latency_ms": 0.029791997803840786,
-      "max_latency_ms": 1063.828583995928,
-      "p50_ms": 0.06020900036673993,
-      "p95_ms": 1002.5791660009418,
-      "p99_ms": 1041.2880410003709,
-      "std_ms": 300.1871178917954
+      "samples": 300,
+      "correct": 200,
+      "accuracy": 0.6666666666666666,
+      "avg_latency_ms": 0.07717294972583962,
+      "min_latency_ms": 0.0524159986525774,
+      "max_latency_ms": 0.1668330078246072,
+      "p50_ms": 0.08133398659992963,
+      "p95_ms": 0.0897919962881133,
+      "p99_ms": 0.10049999400507659,
+      "std_ms": 0.01272472870505902
     }
   },
-  "memory_mb": 92.34375,
-  "throughput_per_sec": 34022.582738481506,
+  "memory_mb": 69.03125,
+  "throughput_per_sec": 19689.719275185427,
   "complexity_test": [
     {
       "length": 20,
-      "latency_ms": 0.02974159870063886
+      "latency_ms": 0.05912500200793147
     },
     {
       "length": 100,
-      "latency_ms": 0.11767509931814857
+      "latency_ms": 0.2171124011510983
     },
     {
       "length": 200,
-      "latency_ms": 0.3848498978186399
+      "latency_ms": 0.6562250957358629
     },
     {
       "length": 400,
-      "latency_ms": 1.343854000151623
+      "latency_ms": 2.3067831993103027
     },
     {
       "length": 1000,
-      "latency_ms": 8.126916700712172
+      "latency_ms": 13.462758201058023
     }
   ],
   "summary": {
-    "total_samples": 1500,
-    "overall_accuracy": 0.6666666666666666,
-    "avg_latency_ms": 33.49058928734545,
-    "p95_latency_ms": 1002.5791660009418
+    "total_samples": 750,
+    "overall_accuracy": 0.8666666666666667,
+    "avg_latency_ms": 0.07811066329142907,
+    "p95_latency_ms": 0.10116699559148401
   }
 }

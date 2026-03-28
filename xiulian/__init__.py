@@ -1,13 +1,42 @@
 """
-修炼 - 轻量级符号推理引擎
+修炼 - 轻量级智能体编排引擎
 
-非Transformer架构，专注于工具调用和网络访问。
-复杂度 O(n log n)，内存 <2GB，延迟 <10ms。
+非Transformer架构，专注于工具调用和智能体编排。
 """
 
 __version__ = "1.0.0"
+__author__ = "XiuLian Team"
 
-from .core import Engine, Intent, Memory, Graph, Tool, Web
 from .api import Result
+from .core import (
+    Agent,
+    Engine,
+    Parser,
+    Memory,
+    KnowledgeGraph,
+    ToolRegistry,
+    ToolDef,
+    Workflow,
+    WorkflowStep,
+    WorkflowEngine,
+    WebClient,
+    Intent,
+    ActionType,
+)
 
-__all__ = ["Engine", "Intent", "Memory", "Graph", "Tool", "Web", "Result"]
+__all__ = [
+    "Result",
+    "Agent",
+    "Engine",
+    "Parser",
+    "Memory",
+    "KnowledgeGraph",
+    "ToolRegistry",
+    "ToolDef",
+    "Workflow",
+    "WorkflowStep",
+    "WorkflowEngine",
+    "WebClient",
+    "Intent",
+    "ActionType",
+]
