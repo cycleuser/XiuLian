@@ -1,0 +1,72 @@
+[
+  {
+    "method": "GeneticAlgorithm",
+    "task": "optimization",
+    "accuracy": -80,
+    "latency_ms": 100,
+    "memory_mb": 0.5,
+    "convergence_iterations": 20,
+    "interpretability_score": 0.6,
+    "reference": "Holland (1975)"
+  },
+  {
+    "method": "NaiveBayes",
+    "task": "classification",
+    "accuracy": 0.85,
+    "latency_ms": 0.02,
+    "memory_mb": 0.1,
+    "convergence_iterations": 0,
+    "interpretability_score": 0.8,
+    "reference": "Pearl (1988)"
+  },
+  {
+    "method": "ID3DecisionTree",
+    "task": "classification",
+    "accuracy": 0.75,
+    "latency_ms": 0.05,
+    "memory_mb": 0.2,
+    "convergence_iterations": 0,
+    "interpretability_score": 0.95,
+    "reference": "Quinlan (1986)"
+  },
+  {
+    "method": "SVM",
+    "task": "classification",
+    "accuracy": 1.0,
+    "latency_ms": 0.1,
+    "memory_mb": 0.5,
+    "convergence_iterations": 1000,
+    "interpretability_score": 0.7,
+    "reference": "Vapnik (1995)"
+  },
+  {
+    "method": "KNN",
+    "task": "classification",
+    "accuracy": 1.0,
+    "latency_ms": 0.05,
+    "memory_mb": 0.1,
+    "convergence_iterations": 0,
+    "interpretability_score": 0.8,
+    "reference": "Cover & Hart (1967)"
+  },
+  {
+    "method": "Q-Learning",
+    "task": "reinforcement",
+    "accuracy": 0.8,
+    "latency_ms": 1.0,
+    "memory_mb": 0.3,
+    "convergence_iterations": 50,
+    "interpretability_score": 0.7,
+    "reference": "Watkins (1989)"
+  },
+  {
+    "method": "KnowledgeGraph",
+    "task": "reasoning",
+    "accuracy": 1.0,
+    "latency_ms": 0.1,
+    "memory_mb": 0.2,
+    "convergence_iterations": 0,
+    "interpretability_score": 1.0,
+    "reference": "Quillian (1968)"
+  }
+]

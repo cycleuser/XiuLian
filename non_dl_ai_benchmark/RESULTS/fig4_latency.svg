@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
+<style>
+  .title { font: bold 22px "Helvetica Neue", Arial, sans-serif; fill: #1a1a1a; }
+  .axis-label { font: 14px "Helvetica Neue", Arial, sans-serif; fill: #333; }
+  .tick-label { font: 12px "Helvetica Neue", Arial, sans-serif; fill: #666; }
+  .bar-label { font: 11px "Helvetica Neue", Arial, sans-serif; fill: #333; }
+  .value-label { font: 10px "Helvetica Neue", Arial, sans-serif; fill: #fff; }
+  .annotation { font: 11px "Helvetica Neue", Arial, sans-serif; fill: #666; }
+</style>
+<rect width="100%" height="100%" fill="#fafafa"/>
+<text x="450.0" y="35" text-anchor="middle" class="title">Inference Latency Comparison (Log Scale)</text>
+<line x1="120" y1="520" x2="850" y2="520" stroke="#333" stroke-width="1.5"/>
+<line x1="120" y1="80" x2="120" y2="520" stroke="#333" stroke-width="1.5"/>
+<line x1="120.0" y1="520" x2="120.0" y2="528" stroke="#333" stroke-width="1"/>
+<text x="120.0" y="545" text-anchor="middle" class="tick-label">10μs</text>
+<line x1="228.97197621835826" y1="520" x2="228.97197621835826" y2="528" stroke="#333" stroke-width="1"/>
+<text x="228.97197621835826" y="545" text-anchor="middle" class="tick-label">100μs</text>
+<line x1="337.94395243671653" y1="520" x2="337.94395243671653" y2="528" stroke="#333" stroke-width="1"/>
+<text x="337.94395243671653" y="545" text-anchor="middle" class="tick-label">1ms</text>
+<line x1="446.91592865507477" y1="520" x2="446.91592865507477" y2="528" stroke="#333" stroke-width="1"/>
+<text x="446.91592865507477" y="545" text-anchor="middle" class="tick-label">10ms</text>
+<line x1="555.8879048734331" y1="520" x2="555.8879048734331" y2="528" stroke="#333" stroke-width="1"/>
+<text x="555.8879048734331" y="545" text-anchor="middle" class="tick-label">100ms</text>
+<line x1="664.8598810917913" y1="520" x2="664.8598810917913" y2="528" stroke="#333" stroke-width="1"/>
+<text x="664.8598810917913" y="545" text-anchor="middle" class="tick-label">1000ms</text>
+<line x1="773.8318573101495" y1="520" x2="773.8318573101495" y2="528" stroke="#333" stroke-width="1"/>
+<text x="773.8318573101495" y="545" text-anchor="middle" class="tick-label">10000ms</text>
+<text x="485.0" y="575" text-anchor="middle" class="axis-label">Latency (ms)</text>
+<text x="35" y="300.0" text-anchor="middle" class="axis-label" transform="rotate(-90, 35, 300.0)">Method</text>
+<rect x="120" y="88.25" width="0.0" height="38.5" fill="#1f77b4" rx="3"/>
+<text x="110" y="111.5" text-anchor="end" class="bar-label">XiuLian</text>
+<text x="125.0" y="111.5" text-anchor="start" class="annotation">10μs</text>
+<rect x="120" y="143.25" width="32.80383352850785" height="38.5" fill="#e377c2" rx="3"/>
+<text x="110" y="166.5" text-anchor="end" class="bar-label">Naive Bayes</text>
+<text x="157.80383352850785" y="166.5" text-anchor="start" class="annotation">20μs</text>
+<rect x="120" y="198.25" width="76.16814268985041" height="38.5" fill="#2ca02c" rx="3"/>
+<text x="110" y="221.5" text-anchor="end" class="bar-label">k-NN</text>
+<text x="186.1681426898504" y="221.5" text-anchor="end" class="value-label">0.05ms</text>
+<rect x="120" y="253.25" width="108.97197621835826" height="38.5" fill="#ff7f0e" rx="3"/>
+<text x="110" y="276.5" text-anchor="end" class="bar-label">Decision Tree</text>
+<text x="218.97197621835826" y="276.5" text-anchor="end" class="value-label">0.10ms</text>
+<rect x="120" y="308.25" width="108.97197621835826" height="38.5" fill="#1f77b4" rx="3"/>
+<text x="110" y="331.5" text-anchor="end" class="bar-label">Knowledge Graph</text>
+<text x="218.97197621835826" y="331.5" text-anchor="end" class="value-label">0.10ms</text>
+<rect x="120" y="363.25" width="128.16098871243474" height="38.5" fill="#9467bd" rx="3"/>
+<text x="110" y="386.5" text-anchor="end" class="bar-label">SVM</text>
+<text x="238.16098871243474" y="386.5" text-anchor="end" class="value-label">0.15ms</text>
+<rect x="120" y="418.25" width="152.33628537970083" height="38.5" fill="#8c564b" rx="3"/>
+<text x="110" y="441.5" text-anchor="end" class="bar-label">Random Forest</text>
+<text x="262.3362853797008" y="441.5" text-anchor="end" class="value-label">0.25ms</text>
+<rect x="120" y="473.25" width="719.8741046189152" height="38.5" fill="#d62728" rx="3"/>
+<text x="110" y="496.5" text-anchor="end" class="bar-label">Qwen3.5-0.8B</text>
+<text x="829.8741046189152" y="496.5" text-anchor="end" class="value-label">40369ms</text>
+<line x1="120" y1="100" x2="120" y2="120" stroke="#d62728" stroke-width="2"/>
+<text x="125" y="115" class="annotation" fill="#d62728">XiuLian: 0.01ms</text>
+<line x1="850" y1="100" x2="850" y2="120" stroke="#d62728" stroke-width="2"/>
+<text x="845" y="115" text-anchor="end" class="annotation" fill="#d62728">Qwen: 40,369ms</text>
+</svg>

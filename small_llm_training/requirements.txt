@@ -1,0 +1,43 @@
+# 核心依赖（中国大陆镜像优化）
+# 使用清华镜像: pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+# PyTorch (CPU版本，适配macOS)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Transformers 和相关库
+transformers>=4.36.0
+datasets>=2.14.0
+accelerate>=0.24.0
+tokenizers>=0.15.0
+sentencepiece>=0.1.99
+
+# ModelScope (国内优先)
+modelscope>=1.10.0
+
+# 训练工具
+peft>=0.7.0
+tqdm>=4.66.0
+
+# 数据处理
+numpy>=1.24.0
+pandas>=2.1.0
+pyyaml>=6.0
+omegaconf>=2.3.0
+
+# 可视化
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# 评估
+evaluate>=0.4.0
+
+# 系统
+psutil>=5.9.0
+
+# 可选依赖（根据需要安装）
+# flash-attn>=2.5.0  # GPU训练时安装
+# bitsandbytes>=0.41.0  # GPU训练时安装
+# deepspeed>=0.12.0  # GPU训练时安装
+# wandb>=0.16.0  # 实验追踪

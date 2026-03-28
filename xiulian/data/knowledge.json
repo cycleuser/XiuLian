@@ -1,0 +1,9 @@
+{
+  "knowledge_items": [
+    {"key": "人工智能", "value": {"def": "模拟人类智能的机器系统", "fields": ["NLP", "CV", "机器人"]}},
+    {"key": "机器学习", "value": {"def": "从数据中学习的AI子集", "types": ["监督", "无监督", "强化"]}},
+    {"key": "深度学习", "value": {"def": "使用多层神经网络", "archs": ["CNN", "RNN", "Transformer"]}},
+    {"key": "Transformer", "value": {"def": "基于自注意力的架构", "complexity": "O(n²)", "models": ["BERT", "GPT", "LLaMA"]}},
+    {"key": "修炼引擎", "value": {"def": "非Transformer的符号推理引擎", "complexity": "O(n log n)", "features": ["低延迟", "低内存", "可解释"]}}
+  ]
+}

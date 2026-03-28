@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+<style>
+  .title { font: bold 18px sans-serif; fill: #333; }
+  .axis-label { font: 14px sans-serif; fill: #666; }
+  .tick-label { font: 12px sans-serif; fill: #333; }
+  .legend { font: 12px sans-serif; fill: #333; }
+</style>
+<text x="400.0" y="30" text-anchor="middle" class="title">Latency vs Input Length</text>
+<line x1="80" y1="340" x2="760" y2="340" stroke="#ccc"/>
+<line x1="80" y1="60" x2="80" y2="340" stroke="#ccc"/>
+<path d="M 80.0 340.0 L 115.78947368421052 339.9990666609629 L 187.36842105263156 339.9971999828888 L 402.10526315789474 339.99159994866636 L 760.0 339.98226655829563" stroke="#2196F3" stroke-width="2" fill="none"/>
+<rect x="660" y="82" width="12" height="12" fill="#2196F3"/>
+<text x="678" y="90" class="legend">XiuLian</text>
+<path d="M 80.0 339.30170684376407 L 115.78947368421052 337.2016940103523 L 187.36842105263156 328.8016426767052 L 402.10526315789474 270.00128334117596 L 760.0 60.0" stroke="#FF5722" stroke-width="2" fill="none"/>
+<rect x="660" y="102" width="12" height="12" fill="#FF5722"/>
+<text x="678" y="110" class="legend">Transformer</text>
+<text x="420.0" y="385" text-anchor="middle" class="axis-label">Input Length (tokens)</text>
+<text x="20" y="200.0" text-anchor="middle" class="axis-label" transform="rotate(-90, 20, 200.0)">Latency (ms)</text>
+</svg>

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 600" width="850" height="600">
+<style>
+  .title { font: bold 22px "Helvetica Neue", Arial, sans-serif; fill: #1a1a1a; }
+  .axis-label { font: 14px "Helvetica Neue", Arial, sans-serif; fill: #333; }
+  .tick-label { font: 12px "Helvetica Neue", Arial, sans-serif; fill: #666; }
+  .legend-text { font: 13px "Helvetica Neue", Arial, sans-serif; fill: #333; }
+  .annotation { font: 12px "Helvetica Neue", Arial, sans-serif; fill: #666; }
+</style>
+<rect width="100%" height="100%" fill="#fafafa"/>
+<text x="425.0" y="35" text-anchor="middle" class="title">Complexity Scaling: O(n log n) vs O(n²)</text>
+<rect x="80" y="80" width="720" height="450" fill="#fff" stroke="#e0e0e0" stroke-width="1" rx="2"/>
+<line x1="80" y1="80.0" x2="800" y2="80.0" stroke="#f0f0f0" stroke-width="1"/>
+<text x="70" y="84.0" text-anchor="end" class="tick-label">200k</text>
+<line x1="80" y1="170.0" x2="800" y2="170.0" stroke="#f0f0f0" stroke-width="1"/>
+<text x="70" y="174.0" text-anchor="end" class="tick-label">160k</text>
+<line x1="80" y1="260.0" x2="800" y2="260.0" stroke="#f0f0f0" stroke-width="1"/>
+<text x="70" y="264.0" text-anchor="end" class="tick-label">120k</text>
+<line x1="80" y1="350.0" x2="800" y2="350.0" stroke="#f0f0f0" stroke-width="1"/>
+<text x="70" y="354.0" text-anchor="end" class="tick-label">80k</text>
+<line x1="80" y1="440.0" x2="800" y2="440.0" stroke="#f0f0f0" stroke-width="1"/>
+<text x="70" y="444.0" text-anchor="end" class="tick-label">40k</text>
+<line x1="80" y1="530.0" x2="800" y2="530.0" stroke="#f0f0f0" stroke-width="1"/>
+<text x="70" y="534.0" text-anchor="end" class="tick-label">0k</text>
+<text x="30" y="305.0" text-anchor="middle" class="axis-label" transform="rotate(-90, 30, 305.0)">Latency (ms)</text>
+<line x1="80.0" y1="80" x2="80.0" y2="530" stroke="#f0f0f0" stroke-width="1"/>
+<text x="80.0" y="550" text-anchor="middle" class="tick-label">0</text>
+<line x1="224.0" y1="80" x2="224.0" y2="530" stroke="#f0f0f0" stroke-width="1"/>
+<text x="224.0" y="550" text-anchor="middle" class="tick-label">200</text>
+<line x1="368.0" y1="80" x2="368.0" y2="530" stroke="#f0f0f0" stroke-width="1"/>
+<text x="368.0" y="550" text-anchor="middle" class="tick-label">400</text>
+<line x1="512.0" y1="80" x2="512.0" y2="530" stroke="#f0f0f0" stroke-width="1"/>
+<text x="512.0" y="550" text-anchor="middle" class="tick-label">600</text>
+<line x1="656.0" y1="80" x2="656.0" y2="530" stroke="#f0f0f0" stroke-width="1"/>
+<text x="656.0" y="550" text-anchor="middle" class="tick-label">800</text>
+<line x1="800.0" y1="80" x2="800.0" y2="530" stroke="#f0f0f0" stroke-width="1"/>
+<text x="800.0" y="550" text-anchor="middle" class="tick-label">1000</text>
+<text x="440.0" y="575" text-anchor="middle" class="axis-label">Input Length (tokens)</text>
+<path d="M 116.0 526.486209597675 L 152.0 510.43738392254954 L 224.0 490.74742093051157 L 296.0 477.98129123030145 L 368.0 468.5168275623893 L 440.0 460.99246546642763 L 512.0 454.7465442274582 L 584.0 449.40707686248464 L 656.0 444.74399907718674 L 728.0 440.60505223415885 L 800.0 436.88422697902536" stroke="#1f77b4" stroke-width="3" fill="none"/>
+<path d="M 116.0 304.77101012906894 L 152.0 253.6626413178775 L 224.0 202.55427250668612 L 296.0 172.6577932791125 L 368.0 151.44590369549476 L 440.0 134.9926838913072 L 512.0 121.54942446792109 L 584.0 110.18331057744405 L 656.0 100.33753488430334 L 728.0 91.65294524034739 L 800.0 83.88431508011577" stroke="#d62728" stroke-width="3" fill="none"/>
+<circle cx="116.0" cy="526.486209597675" r="5" fill="#1f77b4" stroke="#fff" stroke-width="2"/>
+<circle cx="152.0" cy="510.43738392254954" r="5" fill="#1f77b4" stroke="#fff" stroke-width="2"/>
+<circle cx="224.0" cy="490.74742093051157" r="5" fill="#1f77b4" stroke="#fff" stroke-width="2"/>
+<circle cx="296.0" cy="477.98129123030145" r="5" fill="#1f77b4" stroke="#fff" stroke-width="2"/>
+<circle cx="368.0" cy="468.5168275623893" r="5" fill="#1f77b4" stroke="#fff" stroke-width="2"/>
+<circle cx="440.0" cy="460.99246546642763" r="5" fill="#1f77b4" stroke="#fff" stroke-width="2"/>
+<circle cx="512.0" cy="454.7465442274582" r="5" fill="#1f77b4" stroke="#fff" stroke-width="2"/>
+<circle cx="584.0" cy="449.40707686248464" r="5" fill="#1f77b4" stroke="#fff" stroke-width="2"/>
+<circle cx="656.0" cy="444.74399907718674" r="5" fill="#1f77b4" stroke="#fff" stroke-width="2"/>
+<circle cx="728.0" cy="440.60505223415885" r="5" fill="#1f77b4" stroke="#fff" stroke-width="2"/>
+<circle cx="800.0" cy="436.88422697902536" r="5" fill="#1f77b4" stroke="#fff" stroke-width="2"/>
+<circle cx="116.0" cy="304.77101012906894" r="5" fill="#d62728" stroke="#fff" stroke-width="2"/>
+<circle cx="152.0" cy="253.6626413178775" r="5" fill="#d62728" stroke="#fff" stroke-width="2"/>
+<circle cx="224.0" cy="202.55427250668612" r="5" fill="#d62728" stroke="#fff" stroke-width="2"/>
+<circle cx="296.0" cy="172.6577932791125" r="5" fill="#d62728" stroke="#fff" stroke-width="2"/>
+<circle cx="368.0" cy="151.44590369549476" r="5" fill="#d62728" stroke="#fff" stroke-width="2"/>
+<circle cx="440.0" cy="134.9926838913072" r="5" fill="#d62728" stroke="#fff" stroke-width="2"/>
+<circle cx="512.0" cy="121.54942446792109" r="5" fill="#d62728" stroke="#fff" stroke-width="2"/>
+<circle cx="584.0" cy="110.18331057744405" r="5" fill="#d62728" stroke="#fff" stroke-width="2"/>
+<circle cx="656.0" cy="100.33753488430334" r="5" fill="#d62728" stroke="#fff" stroke-width="2"/>
+<circle cx="728.0" cy="91.65294524034739" r="5" fill="#d62728" stroke="#fff" stroke-width="2"/>
+<circle cx="800.0" cy="83.88431508011577" r="5" fill="#d62728" stroke="#fff" stroke-width="2"/>
+<rect x="110" y="110" width="130" height="60" fill="#fff" stroke="#e0e0e0" stroke-width="1" rx="4"/>
+<line x1="120" y1="130" x2="150" y2="130" stroke="#1f77b4" stroke-width="3"/>
+<text x="160" y="134" class="legend-text">XiuLian O(n)</text>
+<line x1="120" y1="155" x2="150" y2="155" stroke="#d62728" stroke-width="3"/>
+<text x="160" y="159" class="legend-text">Transformer O(n²)</text>
+<line x1="680" y1="230" x2="730" y2="230" stroke="#666" stroke-width="1" stroke-dasharray="4,4"/>
+<text x="740" y="235" class="annotation">1000 tokens:</text>
+<text x="740" y="255" class="annotation" fill="#1f77b4">XiuLian: 12.5ms</text>
+<text x="740" y="275" class="annotation" fill="#d62728">Transformer: 180s</text>
+</svg>

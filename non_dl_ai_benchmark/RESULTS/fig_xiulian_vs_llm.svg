@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+<style>
+  .title { font: bold 18px sans-serif; fill: #333; }
+  .axis-label { font: 14px sans-serif; fill: #666; }
+  .tick-label { font: 12px sans-serif; fill: #333; }
+  .bar-label { font: 11px sans-serif; fill: #333; text-anchor: middle; }
+  .value-label { font: 10px sans-serif; fill: #fff; text-anchor: middle; }
+</style>
+<text x="400.0" y="30" text-anchor="middle" class="title">XiuLian vs LLM Latency</text>
+<line x1="80" y1="320" x2="760" y2="320" stroke="#ccc" stroke-width="1"/>
+<line x1="80" y1="60" x2="80" y2="320" stroke="#ccc" stroke-width="1"/>
+<line x1="75" y1="320.0" x2="80" y2="320.0" stroke="#ccc"/>
+<text x="70" y="324.0" text-anchor="end" class="tick-label">0.0</text>
+<line x1="75" y1="268.0" x2="80" y2="268.0" stroke="#ccc"/>
+<text x="70" y="272.0" text-anchor="end" class="tick-label">8073.8</text>
+<line x1="75" y1="216.0" x2="80" y2="216.0" stroke="#ccc"/>
+<text x="70" y="220.0" text-anchor="end" class="tick-label">16147.6</text>
+<line x1="75" y1="164.0" x2="80" y2="164.0" stroke="#ccc"/>
+<text x="70" y="168.0" text-anchor="end" class="tick-label">24221.4</text>
+<line x1="75" y1="112.0" x2="80" y2="112.0" stroke="#ccc"/>
+<text x="70" y="116.0" text-anchor="end" class="tick-label">32295.2</text>
+<line x1="75" y1="60.0" x2="80" y2="60.0" stroke="#ccc"/>
+<text x="70" y="64.0" text-anchor="end" class="tick-label">40369.0</text>
+<text x="20" y="190.0" text-anchor="middle" class="axis-label" transform="rotate(-90, 20, 190.0)">Latency (ms)</text>
+<rect x="136.66666666666666" y="320.0" width="226.66666666666666" height="0.0" fill="#2196F3" rx="2"/>
+<text x="250.0" y="340" class="bar-label">XiuLian</text>
+<rect x="476.6666666666667" y="60.0" width="226.66666666666666" height="260.0" fill="#FF5722" rx="2"/>
+<text x="590.0" y="75.0" class="value-label">40369.00</text>
+<text x="590.0" y="340" class="bar-label">Qwen3.5-0.8B</text>
+</svg>

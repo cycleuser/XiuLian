@@ -1,0 +1,70 @@
+{
+  "phi-1-1.3b": {
+    "type": "pretrained",
+    "params": 1418270720,
+    "perplexity": 5.3689494132995605,
+    "generation_quality": {
+      "num_generations": 1,
+      "avg_length": 654.0,
+      "generations": [
+        {
+          "prompt": "计算机视觉让机器理解图像。",
+          "generated": "计算机视觉让机器理解图像。\n    \"\"\"\n    # <YOUR CODE HERE>\n    # Use computer vision techniques to analyze the image and determine the dominant objects in the image.\n    # Return a list of the dominant objects found in the image.\n    pass\n\n\n\nfrom typing import List\n\ndef most_similar_object_color(color: str, colors: List[str]) -> str:\n    \"\"\"\n    Returns the color from the list that is most similar to the input color.\n\n    Parameters:\n    color (str): The input color to compare.\n    colors (List[str]): The list of colors to compare against.\n\n    Returns:\n    str: The color from the list that is most similar to the input color.\n    \"\"\"\n    # Initialize variables",
+          "length": 654
+        }
+      ]
+    },
+    "qa_accuracy": 0
+  },
+  "smollm-135m": {
+    "type": "pretrained",
+    "params": 134515008,
+    "perplexity": 8.782454490661621,
+    "generation_quality": {
+      "num_generations": 1,
+      "avg_length": 131.0,
+      "generations": [
+        {
+          "prompt": "计算机视觉让机器理解图像。",
+          "generated": "计算机视觉让机器理解图像。\n\n# 在图像上，有一些特殊的图像，但是也有一些不一样的图像，因为图像处理之后，还需要处理的图像，所以这个图像还要需要处理的图像。\n\n# 也有一些不一样的图像，因为图像处理之后，还需要处理的图像。\n\n# 也有一个不一样的图像，因为图像处",
+          "length": 131
+        }
+      ]
+    },
+    "qa_accuracy": 0
+  },
+  "tinyllama-1.1b": {
+    "type": "pretrained",
+    "params": 1100048384,
+    "perplexity": 19.30824089050293,
+    "generation_quality": {
+      "num_generations": 1,
+      "avg_length": 137.0,
+      "generations": [
+        {
+          "prompt": "计算机视觉让机器理解图像。",
+          "generated": "计算机视觉让机器理解图像。\n- 神经网络 ：神经网络是一种深度学习框架，它能够学习图像中的物体特征。\n- 预训练模型 ：预训练模型是一种训练数据准备的方法，它们通过在训练数据上学习，使模型更有效地处理新数据。\n- 预训练模型的好处：\n  1. 较少的训练数据需求：�����",
+          "length": 137
+        }
+      ]
+    },
+    "qa_accuracy": 0
+  },
+  "qwen2.5-0.5b": {
+    "type": "pretrained",
+    "params": 494032768,
+    "perplexity": 109.70054626464844,
+    "generation_quality": {
+      "num_generations": 1,
+      "avg_length": 686.0,
+      "generations": [
+        {
+          "prompt": "计算机视觉让机器理解图像。",
+          "generated": "计算机视觉让机器理解图像。图像识别是让机器根据图像识别出物体的类型、属性、位置、大小、形状等。根据不同的分类标准，可以将图像识别分为文字识别、图像分类、图像识别等。其中，图像分类是基于图像的语义理解，识别出图像中不同类别的物体。\n图像分类是机器学习中的一个重要任务，也是图像识别的基础。通过图像分类，可以对图像进行分类，从而实现图像识别。图像分类的任务是将图像中的物体分类成不同的类别，例如将人脸、动物、建筑物等图像分类成不同类别。\n图像分类的方法有很多，其中一种常见的方法是基于卷积神经网络（CNN）的图像分类。CNN是一种深度学习算法，它可以学习图像中的特征和模式，并通过卷积操作来提取图像中的特征。通过将图像中的像素映射到一个高维空间中，CNN可以学习到图像中的特征和模式，并通过卷积操作来提取这些特征。然后，CNN可以使用这些特征来分类图像中的物体。\nCNN在图像分类中经常用于图像识别，例如人脸识别、车牌识别等。通过CNN的深度学习，可以实现对图像中的物体进行分类，从而实现图像识别。\n除了基于CNN的图像分类，还有其他一些图像分类算法，例如基于支持向量机（SVM）的图像分类。SVM是一种支持向量机算法，它可以通过将图像中的像素映射到一个高维空间中，从而学习到图像中的特征和模式，并通过最小化损失函数来分类图像中的物体。SVM在图像分类中经常用于图像分割、图像识别等任务。\n综上所述，图像分类是机器学习中的一个重要任务，通过图像分类可以实现对图像中的物体进行分类和识别，从而实现图像识别。图像分类的方法有很多种，其中一种常见的方法是基于卷积神经网络的图像分类。",
+          "length": 686
+        }
+      ]
+    },
+    "qa_accuracy": 0
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "XiuLian": {
+    "avg_latency_ms": 0.030835469563802082,
+    "min_latency_ms": 0.025033950805664062,
+    "max_latency_ms": 0.04029273986816406,
+    "avg_memory_mb": 0.0013027191162109375,
+    "peak_memory_mb": 0.0013027191162109375,
+    "success_rate": 0.5
+  },
+  "qwen3.5-0.8b": {
+    "avg_latency_ms": 0,
+    "min_latency_ms": 0,
+    "max_latency_ms": 0,
+    "avg_memory_mb": 0,
+    "peak_memory_mb": 0,
+    "success_rate": 0.0
+  }
+}

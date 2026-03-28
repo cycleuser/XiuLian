@@ -1,0 +1,57 @@
+# CPU优化训练配置
+# 适用于 macOS / 无GPU环境
+
+# 模型配置
+model:
+  name: "base-model"
+  type: "causal-lm"
+  trust_remote_code: true
+
+# 数据配置
+data:
+  train_file: "data/processed/train.jsonl"
+  val_file: "data/processed/val.jsonl"
+  max_length: 512
+  batch_size: 2  # CPU环境使用小batch size
+
+# 训练配置
+training:
+  num_epochs: 3
+  learning_rate: 5e-5
+  weight_decay: 0.01
+  warmup_steps: 100
+  
+  # CPU优化
+  device: "cpu"
+  use_mps: true  # macOS Metal Performance Shaders
+  
+  # 混合精度（CPU不支持，保持false）
+  fp16: false
+  bf16: false
+  
+  # 梯度累积（模拟大batch size）
+  gradient_accumulation_steps: 8
+  
+  # 日志
+  logging_steps: 10
+  eval_steps: 100
+  save_steps: 500
+  
+  # 保存策略
+  save_total_limit: 3
+  load_best_model_at_end: true
+  metric_for_best_model: "eval_loss"
+  
+# 优化器
+optimizer:
+  type: "adamw"
+  scheduler: "linear"
+  
+# 内存优化
+memory:
+  low_cpu_mem_usage: true
+  gradient_checkpointing: true  # 节省内存但减慢速度
+  
+# 其他
+seed: 42
+dataloader_num_workers: 0  # CPU环境

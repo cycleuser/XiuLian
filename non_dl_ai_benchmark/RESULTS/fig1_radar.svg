@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" width="900" height="700">
+<style>
+  .title { font: bold 22px "Helvetica Neue", Arial, sans-serif; fill: #1a1a1a; }
+  .axis-label { font: 13px "Helvetica Neue", Arial, sans-serif; fill: #333; }
+  .tick-label { font: 11px "Helvetica Neue", Arial, sans-serif; fill: #666; }
+  .legend-text { font: 12px "Helvetica Neue", Arial, sans-serif; fill: #333; }
+  .grid-line { stroke: #e0e0e0; stroke-width: 1; }
+  .axis-line { stroke: #bdbdbd; stroke-width: 1.5; }
+</style>
+<rect width="100%" height="100%" fill="#fafafa"/>
+<text x="450.0" y="35" text-anchor="middle" class="title">Multi-Dimensional Performance Comparison</text>
+<polygon points="450.0,330.0 497.5528258147577,364.54915028125265 479.38926261462365,420.45084971874735 420.61073738537635,420.45084971874735 402.4471741852423,364.54915028125265" fill="none" class="grid-line"/>
+<polygon points="450.0,280.0 545.1056516295154,349.09830056250524 508.7785252292473,460.90169943749476 391.2214747707527,460.90169943749476 354.89434837048464,349.0983005625053" fill="none" class="grid-line"/>
+<polygon points="450.0,230.0 592.658477444273,333.6474508437579 538.167787843871,501.3525491562421 361.83221215612906,501.3525491562421 307.34152255572695,333.6474508437579" fill="none" class="grid-line"/>
+<polygon points="450.0,180.0 640.2113032590307,318.19660112501055 567.5570504584946,541.8033988749895 332.4429495415054,541.8033988749895 259.78869674096927,318.19660112501055" fill="none" class="grid-line"/>
+<polygon points="450.0,130.0 687.7641290737884,302.74575140626314 596.9463130731183,582.2542485937369 303.0536869268817,582.2542485937369 212.2358709262116,302.7457514062632" fill="none" class="grid-line"/>
+<line x1="450" y1="380" x2="450.0" y2="130.0" class="axis-line"/>
+<text x="450.0" y="95.0" text-anchor="middle" dominant-baseline="middle" class="axis-label">Accuracy</text>
+<line x1="450" y1="380" x2="687.7641290737884" y2="302.74575140626314" class="axis-line"/>
+<text x="721.0511071441188" y="291.93015660314" text-anchor="middle" dominant-baseline="middle" class="axis-label">Speed</text>
+<line x1="450" y1="380" x2="596.9463130731183" y2="582.2542485937369" class="axis-line"/>
+<text x="617.5187969033549" y="610.56984339686" text-anchor="middle" dominant-baseline="middle" class="axis-label">Memory
+Efficiency</text>
+<line x1="450" y1="380" x2="303.0536869268817" y2="582.2542485937369" class="axis-line"/>
+<text x="282.4812030966452" y="610.56984339686" text-anchor="middle" dominant-baseline="middle" class="axis-label">Interpretability</text>
+<line x1="450" y1="380" x2="212.2358709262116" y2="302.7457514062632" class="axis-line"/>
+<text x="178.94889285588124" y="291.93015660314" text-anchor="middle" dominant-baseline="middle" class="axis-label">Train
+Speed</text>
+<text x="450.0" y="322.0" text-anchor="middle" class="tick-label">20%</text>
+<text x="450.0" y="272.0" text-anchor="middle" class="tick-label">40%</text>
+<text x="450.0" y="222.0" text-anchor="middle" class="tick-label">60%</text>
+<text x="450.0" y="172.0" text-anchor="middle" class="tick-label">80%</text>
+<text x="450.0" y="122.0" text-anchor="middle" class="tick-label">100%</text>
+<polygon points="450.0,234.16666666666666 687.740352660881,302.7534768311225 596.7699774974305,582.0115434954243 310.4010025805377,572.14153616405 212.25964733911897,302.75347683112255" fill="#1f77b4" fill-opacity="0.2" stroke="#1f77b4" stroke-width="2"/>
+<polygon points="450.0,156.66666666666669 687.4074828801777,302.86163277915375 596.867941706146,582.1463796611536 347.1375808488172,521.5779740156158 224.124077379901,306.60846383595003" fill="#9467bd" fill-opacity="0.2" stroke="#9467bd" stroke-width="2"/>
+<polygon points="450.0,162.50000000000006 687.1697187511039,302.9388870277475 596.8287560226597,582.0924451948619 339.7902651951613,531.6906864453026 216.99115350768736,304.2908363781379" fill="#8c564b" fill-opacity="0.2" stroke="#8c564b" stroke-width="2"/>
+<polygon points="450.0,178.33333333333331 687.7165762479736,302.7612022559819 596.9365166522467,582.240764977164 325.0956338878495,551.9161113046763 212.3547529907485,302.78437853056005" fill="#e377c2" fill-opacity="0.2" stroke="#e377c2" stroke-width="2"/>
+<polygon points="450.0,194.16666666666669 450.0,380.0 462.7353471330036,397.5287015447905 405.9161060780645,440.6762745781211 212.2358709262116,302.7457514062632" fill="#d62728" fill-opacity="0.3" stroke="#d62728" stroke-width="2"/>
+<text x="120" y="620" class="legend-text" font-weight="bold">Legend:</text>
+<rect x="120" y="635" width="15" height="15" fill="#1f77b4" rx="2"/>
+<text x="140" y="647" class="legend-text">XiuLian</text>
+<rect x="340" y="635" width="15" height="15" fill="#9467bd" rx="2"/>
+<text x="360" y="647" class="legend-text">SVM</text>
+<rect x="560" y="635" width="15" height="15" fill="#8c564b" rx="2"/>
+<text x="580" y="647" class="legend-text">Random Forest</text>
+<rect x="120" y="660" width="15" height="15" fill="#e377c2" rx="2"/>
+<text x="140" y="672" class="legend-text">Naive Bayes</text>
+<rect x="340" y="660" width="15" height="15" fill="#d62728" rx="2"/>
+<text x="360" y="672" class="legend-text">Qwen3.5-0.8B</text>
+</svg>

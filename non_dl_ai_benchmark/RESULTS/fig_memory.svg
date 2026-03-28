@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+<style>
+  .title { font: bold 18px sans-serif; fill: #333; }
+  .axis-label { font: 14px sans-serif; fill: #666; }
+  .tick-label { font: 12px sans-serif; fill: #333; }
+  .bar-label { font: 11px sans-serif; fill: #333; text-anchor: middle; }
+  .value-label { font: 10px sans-serif; fill: #fff; text-anchor: middle; }
+</style>
+<text x="400.0" y="30" text-anchor="middle" class="title">Memory Usage Comparison</text>
+<line x1="80" y1="320" x2="760" y2="320" stroke="#ccc" stroke-width="1"/>
+<line x1="80" y1="60" x2="80" y2="320" stroke="#ccc" stroke-width="1"/>
+<line x1="75" y1="320.0" x2="80" y2="320.0" stroke="#ccc"/>
+<text x="70" y="324.0" text-anchor="end" class="tick-label">0.0</text>
+<line x1="75" y1="268.0" x2="80" y2="268.0" stroke="#ccc"/>
+<text x="70" y="272.0" text-anchor="end" class="tick-label">0.2</text>
+<line x1="75" y1="216.0" x2="80" y2="216.0" stroke="#ccc"/>
+<text x="70" y="220.0" text-anchor="end" class="tick-label">0.5</text>
+<line x1="75" y1="164.0" x2="80" y2="164.0" stroke="#ccc"/>
+<text x="70" y="168.0" text-anchor="end" class="tick-label">0.7</text>
+<line x1="75" y1="112.0" x2="80" y2="112.0" stroke="#ccc"/>
+<text x="70" y="116.0" text-anchor="end" class="tick-label">1.0</text>
+<line x1="75" y1="60.0" x2="80" y2="60.0" stroke="#ccc"/>
+<text x="70" y="64.0" text-anchor="end" class="tick-label">1.2</text>
+<text x="20" y="190.0" text-anchor="middle" class="axis-label" transform="rotate(-90, 20, 190.0)">Memory (MB)</text>
+<rect x="91.33333333333333" y="320.0" width="45.333333333333336" height="0.0" fill="#607D8B" rx="2"/>
+<text x="114.0" y="340" class="bar-label">Perceptron</text>
+<rect x="159.33333333333334" y="212.94117647058823" width="45.333333333333336" height="107.05882352941177" fill="#4CAF50" rx="2"/>
+<text x="182.0" y="227.94117647058823" class="value-label">0.50</text>
+<text x="182.0" y="340" class="bar-label">k-NN</text>
+<rect x="227.33333333333334" y="300.3361344537815" width="45.333333333333336" height="19.66386554621849" fill="#00BCD4" rx="2"/>
+<text x="250.0" y="340" class="bar-label">Naive</text>
+<text x="250.0" y="352" class="bar-label">Bayes</text>
+<rect x="295.3333333333333" y="256.6386554621849" width="45.333333333333336" height="63.36134453781512" fill="#FF9800" rx="2"/>
+<text x="318.0" y="271.6386554621849" class="value-label">0.30</text>
+<text x="318.0" y="340" class="bar-label">Decision</text>
+<text x="318.0" y="352" class="bar-label">Tree</text>
+<rect x="363.3333333333333" y="60.0" width="45.333333333333336" height="260.0" fill="#795548" rx="2"/>
+<text x="386.0" y="75.0" class="value-label">1.20</text>
+<text x="386.0" y="340" class="bar-label">Random</text>
+<text x="386.0" y="352" class="bar-label">Forest</text>
+<rect x="431.3333333333333" y="147.39495798319325" width="45.333333333333336" height="172.60504201680675" fill="#9C27B0" rx="2"/>
+<text x="454.0" y="162.39495798319325" class="value-label">0.80</text>
+<text x="454.0" y="340" class="bar-label">SVM</text>
+<rect x="499.3333333333333" y="212.94117647058823" width="45.333333333333336" height="107.05882352941177" fill="#3F51B5" rx="2"/>
+<text x="522.0" y="227.94117647058823" class="value-label">0.50</text>
+<text x="522.0" y="340" class="bar-label">Genetic</text>
+<text x="522.0" y="352" class="bar-label">Algorithm</text>
+<rect x="567.3333333333334" y="256.6386554621849" width="45.333333333333336" height="63.36134453781512" fill="#E91E63" rx="2"/>
+<text x="590.0" y="271.6386554621849" class="value-label">0.30</text>
+<text x="590.0" y="340" class="bar-label">Q-Learning</text>
+<rect x="635.3333333333334" y="234.78991596638656" width="45.333333333333336" height="85.21008403361344" fill="#009688" rx="2"/>
+<text x="658.0" y="249.78991596638656" class="value-label">0.40</text>
+<text x="658.0" y="340" class="bar-label">Knowledge</text>
+<text x="658.0" y="352" class="bar-label">Graph</text>
+<rect x="703.3333333333334" y="278.4873949579832" width="45.333333333333336" height="41.51260504201681" fill="#CDDC39" rx="2"/>
+<text x="726.0" y="293.4873949579832" class="value-label">0.20</text>
+<text x="726.0" y="340" class="bar-label">Fuzzy</text>
+<text x="726.0" y="352" class="bar-label">Logic</text>
+</svg>

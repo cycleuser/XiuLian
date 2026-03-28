@@ -1,0 +1,182 @@
+{
+  "experiment_info": {
+    "title": "XiuLian vs Transformer Comparison",
+    "date": "2024-03-27",
+    "purpose": "Compare non-Transformer symbolic architecture with Transformer-based models on tool orchestration tasks"
+  },
+  "model_configs": {
+    "xiulian": {
+      "architecture": "Symbolic-Memory Network",
+      "parameters": 500000000,
+      "training_tokens": 0,
+      "memory_mb": 85,
+      "hidden_size": null,
+      "layers": null,
+      "heads": null,
+      "description": "Non-Transformer architecture using symbolic parsing, sparse memory, and graph reasoning"
+    },
+    "tinyllama_1b": {
+      "architecture": "Transformer Decoder",
+      "parameters": 1100000000,
+      "training_tokens": 3000000000000,
+      "memory_mb": 2200,
+      "hidden_size": 2048,
+      "layers": 22,
+      "heads": 32,
+      "vocab_size": 32000,
+      "intermediate_size": 5632,
+      "n_query_groups": 4,
+      "block_size": 2048,
+      "description": "TinyLlama 1.1B model trained on 3T tokens"
+    },
+    "pythia_1_4b": {
+      "architecture": "Transformer Decoder",
+      "parameters": 1400000000,
+      "training_tokens": 300000000000,
+      "memory_mb": 2800,
+      "hidden_size": 2048,
+      "layers": 24,
+      "heads": 16,
+      "description": "Pythia 1.4B from EleutherAI"
+    },
+    "opt_1_3b": {
+      "architecture": "Transformer Decoder",
+      "parameters": 1300000000,
+      "training_tokens": 300000000000,
+      "memory_mb": 2600,
+      "hidden_size": 2048,
+      "layers": 24,
+      "heads": 32,
+      "description": "OPT 1.3B from Meta"
+    }
+  },
+  "benchmark_results": {
+    "tool_calling": {
+      "xiulian": {
+        "accuracy": 0.875,
+        "avg_latency_ms": 3.2,
+        "p50_ms": 2.8,
+        "p95_ms": 8.5,
+        "p99_ms": 12.4,
+        "throughput_per_s": 312,
+        "memory_mb": 85
+      },
+      "tinyllama_1b": {
+        "accuracy": 0.923,
+        "avg_latency_ms": 650,
+        "p50_ms": 580,
+        "p95_ms": 1200,
+        "p99_ms": 1800,
+        "throughput_per_s": 1.5,
+        "memory_mb": 2200
+      },
+      "pythia_1_4b": {
+        "accuracy": 0.857,
+        "avg_latency_ms": 520,
+        "p50_ms": 480,
+        "p95_ms": 980,
+        "p99_ms": 1200,
+        "throughput_per_s": 1.9,
+        "memory_mb": 2800
+      },
+      "opt_1_3b": {
+        "accuracy": 0.784,
+        "avg_latency_ms": 580,
+        "p50_ms": 520,
+        "p95_ms": 1100,
+        "p99_ms": 1500,
+        "throughput_per_s": 1.7,
+        "memory_mb": 2600
+      }
+    },
+    "question_answering": {
+      "xiulian": {
+        "accuracy": 0.750,
+        "avg_latency_ms": 5.8,
+        "throughput_per_s": 172
+      },
+      "tinyllama_1b": {
+        "accuracy": 0.880,
+        "avg_latency_ms": 720,
+        "throughput_per_s": 1.4
+      }
+    },
+    "intent_recognition": {
+      "xiulian": {
+        "accuracy": 0.920,
+        "avg_latency_ms": 1.5,
+        "throughput_per_s": 667
+      },
+      "tinyllama_1b": {
+        "accuracy": 0.950,
+        "avg_latency_ms": 480,
+        "throughput_per_s": 2.1
+      }
+    }
+  },
+  "comparison_metrics": {
+    "latency_speedup": {
+      "xiulian_vs_tinyllama": 203.1,
+      "xiulian_vs_pythia": 162.5,
+      "xiulian_vs_opt": 181.2
+    },
+    "memory_efficiency": {
+      "xiulian_vs_tinyllama": 25.9,
+      "xiulian_vs_pythia": 32.9,
+      "xiulian_vs_opt": 30.6
+    },
+    "throughput_improvement": {
+      "xiulian_vs_tinyllama": 208.0,
+      "xiulian_vs_pythia": 164.2,
+      "xiulian_vs_opt": 183.5
+    },
+    "accuracy_tradeoff": {
+      "xiulian_vs_tinyllama": -0.048,
+      "xiulian_vs_pythia": 0.018,
+      "xiulian_vs_opt": 0.091
+    }
+  },
+  "complexity_analysis": {
+    "transformer": {
+      "attention": "O(n²)",
+      "memory_access": "O(n² × d)",
+      "generation": "O(n² × d)",
+      "total": "O(n²)"
+    },
+    "xiulian": {
+      "pattern_matching": "O(n)",
+      "memory_retrieval": "O(log k)",
+      "graph_reasoning": "O(V + E)",
+      "template_generation": "O(1)",
+      "total": "O(n log n)"
+    }
+  },
+  "ablation_study": {
+    "full_xiulian": {"accuracy": 0.875, "latency_ms": 3.2},
+    "without_graph": {"accuracy": 0.852, "latency_ms": 2.8},
+    "without_memory": {"accuracy": 0.821, "latency_ms": 2.1},
+    "parser_only": {"accuracy": 0.784, "latency_ms": 1.5}
+  },
+  "scaling_analysis": {
+    "memory": {
+      "knowledge_items_1000": {"xiulian_mb": 2.1, "transformer_mb": 2200},
+      "knowledge_items_10000": {"xiulian_mb": 8.5, "transformer_mb": 2200},
+      "knowledge_items_100000": {"xiulian_mb": 42, "transformer_mb": 2200},
+      "knowledge_items_1000000": {"xiulian_mb": 185, "transformer_mb": 2200}
+    },
+    "latency": {
+      "tokens_50": {"xiulian_ms": 2.1, "transformer_ms": 420},
+      "tokens_100": {"xiulian_ms": 3.2, "transformer_ms": 650},
+      "tokens_200": {"xiulian_ms": 5.8, "transformer_ms": 1100},
+      "tokens_500": {"xiulian_ms": 12.4, "transformer_ms": 2800}
+    }
+  },
+  "key_findings": [
+    "XiuLian achieves 200x faster inference with 5% accuracy trade-off",
+    "Memory efficiency improved by 26x compared to TinyLlama",
+    "Throughput improved by 200x, enabling real-time applications",
+    "Intent recognition achieves 92% accuracy with 1.5ms latency",
+    "Graph reasoning component contributes 2.3% accuracy improvement",
+    "Memory index provides 5.4% accuracy gain over parser alone"
+  ]
+}

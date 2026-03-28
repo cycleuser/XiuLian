@@ -1,0 +1,75 @@
+{
+  "timestamp": "2026-03-28T18:00:22.481630",
+  "environment": {
+    "platform": "darwin",
+    "python_version": "3.13.12 | packaged by Anaconda, Inc. | (main, Feb 24 2026, 16:07:20) [Clang 20.1.8 ]"
+  },
+  "benchmarks": {
+    "tool_calling": {
+      "samples": 500,
+      "correct": 500,
+      "accuracy": 1.0,
+      "avg_latency_ms": 0.022082116192905232,
+      "min_latency_ms": 0.015459001588169485,
+      "max_latency_ms": 0.06074999691918492,
+      "p50_ms": 0.017625003238208592,
+      "p95_ms": 0.037834004615433514,
+      "p99_ms": 0.043000000005122274,
+      "std_ms": 0.008423182818231154
+    },
+    "question_answering": {
+      "samples": 500,
+      "correct": 0,
+      "accuracy": 0.0,
+      "avg_latency_ms": 0.023409260058542714,
+      "min_latency_ms": 0.021166997612453997,
+      "max_latency_ms": 0.050292001105844975,
+      "p50_ms": 0.02274999860674143,
+      "p95_ms": 0.026749999960884452,
+      "p99_ms": 0.0374590017599985,
+      "std_ms": 0.0026623415052248684
+    },
+    "intent_recognition": {
+      "samples": 500,
+      "correct": 0,
+      "accuracy": 0.0,
+      "avg_latency_ms": 102.54199850402074,
+      "min_latency_ms": 0.021540996385738254,
+      "max_latency_ms": 1065.5205419971026,
+      "p50_ms": 0.042625004425644875,
+      "p95_ms": 1014.9658750015078,
+      "p99_ms": 1048.2759170045028,
+      "std_ms": 303.7050085633036
+    }
+  },
+  "memory_mb": 90.484375,
+  "throughput_per_sec": 32298.16266498283,
+  "complexity_test": [
+    {
+      "length": 20,
+      "latency_ms": 0.030237599276006222
+    },
+    {
+      "length": 100,
+      "latency_ms": 0.12267499987501651
+    },
+    {
+      "length": 200,
+      "latency_ms": 0.3769750001083594
+    },
+    {
+      "length": 400,
+      "latency_ms": 1.4204709994373843
+    },
+    {
+      "length": 1000,
+      "latency_ms": 9.544741700665327
+    }
+  ],
+  "summary": {
+    "total_samples": 1500,
+    "overall_accuracy": 0.3333333333333333,
+    "avg_latency_ms": 34.19582996009073,
+    "p95_latency_ms": 1014.9658750015078
+  }
+}

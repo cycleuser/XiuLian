@@ -1,0 +1,64 @@
+[
+  {
+    "input": "调用echo msg=hello",
+    "action": "tool",
+    "target": "echo",
+    "params": {
+      "msg": "hello"
+    }
+  },
+  {
+    "input": "使用time",
+    "action": "tool",
+    "target": "time",
+    "params": {}
+  },
+  {
+    "input": "执行calc expr=1+1",
+    "action": "tool",
+    "target": "calc",
+    "params": {
+      "expr": "1+1"
+    }
+  },
+  {
+    "input": "搜索人工智能",
+    "action": "search",
+    "query": "人工智能"
+  },
+  {
+    "input": "查找机器学习",
+    "action": "search",
+    "query": "机器学习"
+  },
+  {
+    "input": "search AI",
+    "action": "search",
+    "query": "AI"
+  },
+  {
+    "input": "什么是深度学习？",
+    "action": "question",
+    "topic": "深度学习"
+  },
+  {
+    "input": "如何学习编程？",
+    "action": "question",
+    "topic": "学习编程"
+  },
+  {
+    "input": "what is AI?",
+    "action": "question",
+    "topic": "AI"
+  },
+  {
+    "input": "打开 https://example.com",
+    "action": "web",
+    "url": "https://example.com"
+  },
+  {
+    "input": "访问 https://github.com",
+    "action": "web",
+    "url": "https://github.com"
+  }
+]
