@@ -1,0 +1,42 @@
+{
+  "session_start": 1774962830.440884,
+  "session_end": 1774962830.4430428,
+  "iterations_completed": 0,
+  "running": true,
+  "events": [],
+  "evaluation_history": [],
+  "best_score": 0.0,
+  "student_stats": {
+    "symbolic_calls": 0,
+    "neural_calls": 0,
+    "hybrid_calls": 0,
+    "total_calls": 0
+  },
+  "teacher_stats": {
+    "qwen3:14b": {
+      "weight": 0.35,
+      "specialty": "reasoning",
+      "calls": 0
+    },
+    "gemma3:4b": {
+      "weight": 0.25,
+      "specialty": "qa",
+      "calls": 0
+    },
+    "granite4:3b": {
+      "weight": 0.2,
+      "specialty": "code",
+      "calls": 0
+    },
+    "granite4:1b": {
+      "weight": 0.15,
+      "specialty": "fast",
+      "calls": 0
+    },
+    "granite4:350m": {
+      "weight": 0.05,
+      "specialty": "lightweight",
+      "calls": 0
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "timestamp": 1774962830.4467888,
+  "overall_score": 0.0,
+  "pass_rate": 0.0,
+  "category_stats": {
+    "tool_call": {
+      "score": 0,
+      "pass_rate": 0,
+      "count": 0
+    },
+    "qa": {
+      "score": 0,
+      "pass_rate": 0,
+      "count": 0
+    },
+    "search": {
+      "score": 0,
+      "pass_rate": 0,
+      "count": 0
+    },
+    "math": {
+      "score": 0,
+      "pass_rate": 0,
+      "count": 0
+    },
+    "semantic": {
+      "score": 0,
+      "pass_rate": 0,
+      "count": 0
+    }
+  },
+  "results": []
+}

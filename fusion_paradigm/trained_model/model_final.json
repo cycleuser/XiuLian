@@ -1,0 +1,14 @@
+{
+  "learned": {},
+  "rules_count": 11,
+  "templates_count": 8,
+  "entities_count": 16,
+  "stats": {
+    "rule": 14,
+    "template": 16,
+    "learned": 0,
+    "symbolic": 0,
+    "unknown": 0
+  },
+  "timestamp": 1774964719.303934
+}

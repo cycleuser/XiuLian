@@ -1,0 +1,8 @@
+{
+  "iterations": 5,
+  "test_cases": 8,
+  "accuracy": 1.0,
+  "teacher": "granite4:350m",
+  "rules_learned": 5,
+  "timestamp": 1774964203.8509078
+}

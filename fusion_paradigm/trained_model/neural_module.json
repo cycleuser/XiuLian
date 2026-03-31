@@ -1,0 +1,8 @@
+{
+  "vocab_size": 1000,
+  "hidden_dim": 64,
+  "word_to_idx": {},
+  "idx_to_word": {},
+  "word_freq": {},
+  "is_initialized": false
+}

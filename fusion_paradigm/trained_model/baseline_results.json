@@ -1,0 +1,194 @@
+{
+  "timestamp": 1774962936.933923,
+  "overall_score": 0.04592305646407813,
+  "pass_rate": 0.0,
+  "category_stats": {
+    "tool_call": {
+      "score": 0.0,
+      "pass_rate": 0.0,
+      "count": 3,
+      "avg_latency_ms": 0.33466021219889325,
+      "description": "工具调用准确性"
+    },
+    "qa": {
+      "score": 0.049905663326715956,
+      "pass_rate": 0.0,
+      "count": 4,
+      "avg_latency_ms": 0.0,
+      "description": "知识问答准确性"
+    },
+    "search": {
+      "score": 0.0693891402714932,
+      "pass_rate": 0.0,
+      "count": 2,
+      "avg_latency_ms": 0.0,
+      "description": "搜索推理准确性"
+    },
+    "math": {
+      "score": 0.0,
+      "pass_rate": 0.0,
+      "count": 3,
+      "avg_latency_ms": 0.0,
+      "description": "数学计算准确性"
+    },
+    "semantic": {
+      "score": 0.13695324283559576,
+      "pass_rate": 0.0,
+      "count": 3,
+      "avg_latency_ms": 0.0,
+      "description": "语义理解准确性"
+    }
+  },
+  "results": [
+    {
+      "test_id": "tool_001",
+      "category": "tool_call",
+      "student_output": "工具调用: {tool}",
+      "expected_output": "{'message': 'hello'}",
+      "overall_score": 0.0,
+      "passed": false,
+      "feedback": "需要改进，参考答案: ...",
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": "tool_002",
+      "category": "tool_call",
+      "student_output": "我需要学习这个问题的答案。",
+      "expected_output": "4",
+      "overall_score": 0.0,
+      "passed": false,
+      "feedback": "需要改进，参考答案: ...",
+      "latency_ms": 1.0039806365966797
+    },
+    {
+      "test_id": "tool_003",
+      "category": "tool_call",
+      "student_output": "工具调用: {tool}",
+      "expected_output": "{'result': 50}",
+      "overall_score": 0.0,
+      "passed": false,
+      "feedback": "需要改进，参考答案: ...",
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": "qa_001",
+      "category": "qa",
+      "student_output": "问题类型: {type}",
+      "expected_output": "人工智能是模拟人类智能的技术领域",
+      "overall_score": 0.04285714285714285,
+      "passed": false,
+      "feedback": "需要改进，参考答案: 人工智能（AI）是计算机科学的一个分支，致力于创建能够执行需要人类智能的任务的系统。...",
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": "qa_002",
+      "category": "qa",
+      "student_output": "问题类型: {type}",
+      "expected_output": "机器学习是让计算机从数据中学习的方法",
+      "overall_score": 0.047368421052631574,
+      "passed": false,
+      "feedback": "需要改进，参考答案: 机器学习是人工智能的一个子领域，通过算法让计算机从数据中学习模式并做出预测。...",
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": "qa_003",
+      "category": "qa",
+      "student_output": "我需要学习这个问题的答案。",
+      "expected_output": "深度学习是机器学习的子集，使用神经网络",
+      "overall_score": 0.06324324324324325,
+      "passed": false,
+      "feedback": "需要改进，参考答案: 深度学习是机器学习的一个专门分支，使用多层神经网络进行特征学习和模式识别。...",
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": "qa_004",
+      "category": "qa",
+      "student_output": "问题类型: {type}",
+      "expected_output": "自然语言处理是让计算机理解人类语言",
+      "overall_score": 0.046153846153846156,
+      "passed": false,
+      "feedback": "需要改进，参考答案: 自然语言处理（NLP）是人工智能的一个领域，专注于让计算机理解和生成人类语言。...",
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": "search_001",
+      "category": "search",
+      "student_output": "我需要学习这个问题的答案。",
+      "expected_output": "关于人工智能的信息",
+      "overall_score": 0.0623076923076923,
+      "passed": false,
+      "feedback": "需要改进，参考答案: ...",
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": "search_002",
+      "category": "search",
+      "student_output": "我需要学习这个问题的答案。",
+      "expected_output": "机器学习应用于图像识别、推荐系统等",
+      "overall_score": 0.07647058823529411,
+      "passed": false,
+      "feedback": "需要改进，参考答案: ...",
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": "math_001",
+      "category": "math",
+      "student_output": "我需要学习这个问题的答案。",
+      "expected_output": "150",
+      "overall_score": 0.0,
+      "passed": false,
+      "feedback": "需要改进，参考答案: ...",
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": "math_002",
+      "category": "math",
+      "student_output": "我需要学习这个问题的答案。",
+      "expected_output": "100",
+      "overall_score": 0.0,
+      "passed": false,
+      "feedback": "需要改进，参考答案: ...",
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": "math_003",
+      "category": "math",
+      "student_output": "我需要学习这个问题的答案。",
+      "expected_output": "20",
+      "overall_score": 0.0,
+      "passed": false,
+      "feedback": "需要改进，参考答案: ...",
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": "semantic_001",
+      "category": "semantic",
+      "student_output": "我需要学习这个问题的答案。",
+      "expected_output": "是的，苹果公司是iPhone的制造商",
+      "overall_score": 0.12999999999999998,
+      "passed": false,
+      "feedback": "需要改进，参考答案: ...",
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": "semantic_002",
+      "category": "semantic",
+      "student_output": "我需要学习这个问题的答案。",
+      "expected_output": "是的，Python是流行的编程语言",
+      "overall_score": 0.11470588235294116,
+      "passed": false,
+      "feedback": "需要改进，参考答案: ...",
+      "latency_ms": 0.0
+    },
+    {
+      "test_id": "semantic_003",
+      "category": "semantic",
+      "student_output": "我需要学习这个问题的答案。",
+      "expected_output": "数据是机器学习训练的关键",
+      "overall_score": 0.16615384615384615,
+      "passed": false,
+      "feedback": "需要改进，参考答案: ...",
+      "latency_ms": 0.0
+    }
+  ]
+}

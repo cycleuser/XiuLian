@@ -1,0 +1,84 @@
+{
+  "rules": [
+    {
+      "condition": "echo msg",
+      "action": "{\"message\": \"{msg}\"}",
+      "confidence": 1.0,
+      "source": "builtin",
+      "timestamp": 1774962830.4430428
+    },
+    {
+      "condition": "calc",
+      "action": "{\"result\": \"{expr}\"}",
+      "confidence": 1.0,
+      "source": "builtin",
+      "timestamp": 1774962830.4430428
+    }
+  ],
+  "patterns": {
+    "调用\\s*([a-zA-Z_]\\w*)": {
+      "template": "工具调用: {tool}",
+      "category": "tool_call",
+      "matches": 0
+    },
+    "搜索\\s+(.+)": {
+      "template": "搜索关键词: {query}",
+      "category": "search",
+      "matches": 0
+    },
+    "(什么|如何|为什么|怎么).+": {
+      "template": "问题类型: {type}",
+      "category": "question",
+      "matches": 0
+    }
+  },
+  "entities": {
+    "AI": {
+      "type": "concept",
+      "attributes": {
+        "definition": "人工智能"
+      },
+      "timestamp": 1774962830.4430428
+    },
+    "机器学习": {
+      "type": "concept",
+      "attributes": {
+        "parent": "AI"
+      },
+      "timestamp": 1774962830.4430428
+    },
+    "深度学习": {
+      "type": "concept",
+      "attributes": {
+        "parent": "机器学习"
+      },
+      "timestamp": 1774962830.4430428
+    },
+    "NLP": {
+      "type": "concept",
+      "attributes": {
+        "full_name": "自然语言处理"
+      },
+      "timestamp": 1774962830.4430428
+    }
+  },
+  "relations": [
+    [
+      "深度学习",
+      "机器学习",
+      "is_subtype_of"
+    ],
+    [
+      "机器学习",
+      "AI",
+      "is_subtype_of"
+    ],
+    [
+      "NLP",
+      "AI",
+      "is_application_of"
+    ]
+  ],
+  "memory": {},
+  "timestamp": 1774962830.4444451
+}

@@ -1,0 +1,63 @@
+{
+  "baseline_accuracy": 0.8333333333333334,
+  "final_accuracy": 0.8333333333333334,
+  "improvement": 0.0,
+  "iterations": 20,
+  "teacher_calls": {
+    "granite4:350m": 1,
+    "granite4:1b": 0,
+    "gemma3:1b": 0,
+    "granite4:3b": 0
+  },
+  "student_stats": {
+    "rule_hits": 77,
+    "pattern_hits": 112,
+    "learned_hits": 0,
+    "unknown_hits": 7,
+    "total_queries": 196
+  },
+  "test_results": [
+    {
+      "id": "tool_1",
+      "category": "tool",
+      "success": true,
+      "method": "rule",
+      "confidence": 1.0
+    },
+    {
+      "id": "tool_2",
+      "category": "math",
+      "success": true,
+      "method": "rule",
+      "confidence": 1.0
+    },
+    {
+      "id": "tool_3",
+      "category": "math",
+      "success": true,
+      "method": "rule",
+      "confidence": 1.0
+    },
+    {
+      "id": "qa_1",
+      "category": "qa",
+      "success": true,
+      "method": "template",
+      "confidence": 0.9
+    },
+    {
+      "id": "qa_2",
+      "category": "qa",
+      "success": true,
+      "method": "template",
+      "confidence": 0.9
+    },
+    {
+      "id": "search_1",
+      "category": "search",
+      "success": false,
+      "method": "unknown",
+      "confidence": 0.0
+    }
+  ]
+}

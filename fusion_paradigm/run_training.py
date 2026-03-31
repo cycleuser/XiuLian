@@ -73,7 +73,7 @@ class FusionTrainingSession:
         print("\n[阶段1] 初始化组件...")
         
         self.student.bootstrap_from_xiulian()
-        print("  ✓ 符号知识库初始化完成")
+        print("  [OK] 符号知识库初始化完成")
         
         models = await self.teacher_pool._get_session()
         available_models = await self.teacher_pool.query_teacher(
@@ -81,12 +81,12 @@ class FusionTrainingSession:
         )
         
         if "error" not in available_models:
-            print("  ✓ 教师模型池连接成功")
+            print("  [OK] 教师模型池连接成功")
             print(f"    可用教师: {list(self.teacher_pool.teachers.keys())}")
         else:
-            print("  ⚠ 教师模型池连接异常，将使用离线模式")
+            print("  [WARN] 教师模型池连接异常，将使用离线模式")
         
-        print("  ✓ 标准化测试基准加载完成")
+        print("  [OK] 标准化测试基准加载完成")
         print(f"    测试用例: {len(self.benchmark.test_cases)}个")
         print(f"    测试类别: {list(self.benchmark.categories.keys())}")
         
@@ -158,7 +158,7 @@ class FusionTrainingSession:
         })
         
         if overall > 0.85:
-            print(f"\n  🎯 已达到优秀水平 ({overall:.2%})!")
+            print(f"\n  [TARGET] 已达到优秀水平 ({overall:.2%})!")
     
     def _generate_progress_report(self):
         elapsed = time.time() - self.start_time
@@ -266,13 +266,13 @@ class FusionTrainingSession:
                 progress = await self.training_iteration()
                 
                 if progress.accuracy >= 0.85:
-                    print(f"\n✅ 已达到目标准确率!")
+                    print(f"\n[OK] 已达到目标准确率!")
                     break
                 
                 await asyncio.sleep(1.0)
                 
             except Exception as e:
-                print(f"\n⚠ 迭代错误: {e}")
+                print(f"\n[WARN] 迭代错误: {e}")
                 self._log_event("error", {"message": str(e)})
                 await asyncio.sleep(5.0)
         
@@ -307,11 +307,11 @@ async def main():
         print(f"\n训练完成！最终得分: {final_score:.2%}")
         
         if final_score >= 0.85:
-            print("🎉 达到优秀水平！")
+            print("[EXCELLENT] 达到优秀水平！")
         elif final_score >= 0.70:
-            print("✓ 达到良好水平")
+            print("[GOOD] 达到良好水平")
         else:
-            print("⚠ 需要继续训练以达到目标水平")
+            print("[WARN] 需要继续训练以达到目标水平")
             
     except KeyboardInterrupt:
         print("\n\n训练被用户中断")

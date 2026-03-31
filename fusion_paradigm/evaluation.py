@@ -339,7 +339,8 @@ class StandardBenchmark:
             cat_results = [r for r in self.results if r.category == cat]
             
             if not cat_results:
-                stats[cat] = {"score": 0, "pass_rate": 0, "count": 0}
+                stats[cat] = {"score": 0, "pass_rate": 0, "count": 0, 
+                             "description": info["description"]}
                 continue
             
             avg_score = sum(r.overall_score for r in cat_results) / len(cat_results)

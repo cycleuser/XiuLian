@@ -1,0 +1,50 @@
+{
+  "learned_answers": {
+    "搜索深度学习": "搜索深度学习"
+  },
+  "rules_count": 8,
+  "entities": [
+    "人工智能",
+    "AI",
+    "机器学习",
+    "深度学习",
+    "NLP",
+    "自然语言处理",
+    "Python"
+  ],
+  "relations": [
+    [
+      "机器学习",
+      "人工智能",
+      "is_subtype_of"
+    ],
+    [
+      "机器学习",
+      "AI",
+      "is_subtype_of"
+    ],
+    [
+      "深度学习",
+      "机器学习",
+      "is_subtype_of"
+    ],
+    [
+      "NLP",
+      "AI",
+      "is_application_of"
+    ],
+    [
+      "自然语言处理",
+      "NLP",
+      "same_as"
+    ]
+  ],
+  "stats": {
+    "rule_hits": 77,
+    "pattern_hits": 112,
+    "learned_hits": 0,
+    "unknown_hits": 7,
+    "total_queries": 196
+  },
+  "timestamp": 1774964440.183073
+}

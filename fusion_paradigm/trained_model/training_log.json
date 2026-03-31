@@ -1,0 +1,41 @@
+{
+  "final_accuracy": 1.0,
+  "iterations": 1,
+  "teacher_calls": {
+    "granite4:350m": 0,
+    "granite4:1b": 0,
+    "gemma3:1b": 0,
+    "gemma3:4b": 0
+  },
+  "learned_count": 0,
+  "stats": {
+    "rule": 14,
+    "template": 16,
+    "learned": 0,
+    "symbolic": 0,
+    "unknown": 0
+  },
+  "timestamp": "2026-03-31T21:45:19.303934",
+  "category_results": {
+    "tool": {
+      "passed": 2,
+      "total": 2
+    },
+    "math": {
+      "passed": 3,
+      "total": 3
+    },
+    "search": {
+      "passed": 1,
+      "total": 1
+    },
+    "web": {
+      "passed": 1,
+      "total": 1
+    },
+    "qa": {
+      "passed": 8,
+      "total": 8
+    }
+  }
+}

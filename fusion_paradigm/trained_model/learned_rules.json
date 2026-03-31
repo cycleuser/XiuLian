@@ -1,0 +1,38 @@
+{
+  "rules": [
+    {
+      "q": "搜索人工智能",
+      "a": "Artificial intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and learn like humans. These intelligent systems can be trained to perform specific tasks, such as recognizing speech, visual patterns, or solving problems. AI technologies include machine learning, deep learning, natural language processing, computer vision, robotics, and others, enabling computers to mimic and augment human cognitive functions",
+      "conf": 1.0
+    },
+    {
+      "q": "搜索人工智能",
+      "a": "AI refers to artificial intelligence technology that enables machines to perform tasks that typically require human-like intelligence.",
+      "conf": 1.0
+    },
+    {
+      "q": "搜索人工智能",
+      "a": "I'm sorry for any confusion, but as a text-based AI model, I don't have the capability to search or interact with external systems or databases. My primary function is to assist users in generating human-like text based on given prompts and instructions. If you need assistance with creating an artificial intelligence assistant, feel free to ask!",
+      "conf": 1.0
+    },
+    {
+      "q": "搜索人工智能",
+      "a": "I am an AI language model designed to assist users in various tasks related to information retrieval and processing. How may I help you today?",
+      "conf": 1.0
+    },
+    {
+      "q": "搜索人工智能",
+      "a": "I'm sorry for the misunderstanding, but as a text-based AI model, I don't have the capability to perform or search through external information such as web searches. My primary function is to respond based on the training data provided and assist with tasks related to language processing.",
+      "conf": 1.0
+    }
+  ],
+  "learned": {
+    "搜索人工智能": "I'm sorry for the misunderstanding, but as a text-based AI model, I don't have the capability to perform or search through external information such as web searches. My primary function is to respond based on the training data provided and assist with tasks related to language processing."
+  },
+  "patterns": [
+    "调用\\s*echo\\s+msg\\s*=\\s*(\\w+)",
+    "计算\\s*(\\d+)\\s*\\+\\s*(\\d+)",
+    "计算\\s*(\\d+)\\s*\\*\\s*(\\d+)",
+    "搜索\\s+(.+)"
+  ]
+}
